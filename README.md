@@ -61,6 +61,16 @@ add root lavel style file
 }
 ... 
 ```
+### Version Mapping
+
+
+| Slider | Ng   |
+|--------|------|
+| 0.0.1  | 14.x |
+| 1.0.0  | 15.x |
+| 2.0.0  | 16.x |
+| 3.0.0  | 17.x |
+
 
 ### Properties
 
