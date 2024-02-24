@@ -1,6 +1,6 @@
 {
   "name": "rm-range-slider",
-  "version": "1.0.0",
+  "version": "3.0.1",
   "description": "A highly optimized and fully customizable pure angular component for value range selection.",
   "keywords": [
     "",
@@ -32,12 +32,13 @@
     "url": "https://github.com/malikrajat/rm-range-slider"
   },
   "peerDependencies": {
-    "@angular/common": "^15.2.10",
-    "@angular/core": "^15.2.10"
+    "@angular/common": "^17.2.0",
+    "@angular/core": "^17.2.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "sideEffects": false,
   "module": "fesm2022/rm-range-slider.mjs",
   "typings": "index.d.ts",
   "exports": {
@@ -50,6 +51,5 @@
       "esm": "./esm2022/rm-range-slider.mjs",
       "default": "./fesm2022/rm-range-slider.mjs"
     }
-  },
-  "sideEffects": false
+  }
 }
