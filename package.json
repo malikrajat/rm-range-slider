@@ -33,11 +33,13 @@
   },
   "peerDependencies": {
     "@angular/common": "^18.1.4",
-    "@angular/core": "^18.1.4"
+    "@angular/core": "^18.1.4",
+    "@angular/material": "^18.1.4"
   },
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "sideEffects": false,
   "module": "fesm2022/rm-range-slider.mjs",
   "typings": "index.d.ts",
   "exports": {
@@ -50,6 +52,5 @@
       "esm": "./esm2022/rm-range-slider.mjs",
       "default": "./fesm2022/rm-range-slider.mjs"
     }
-  },
-  "sideEffects": false
+  }
 }

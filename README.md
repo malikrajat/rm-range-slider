@@ -1,4 +1,3 @@
-
 # Range-slider
 
 A highly optimized and fully customizable pure angular component for value range selection.
@@ -9,58 +8,49 @@ Even if there is a label, only the label component is re-rendered when values ar
 RangeSlider uses angular Native's Animated library to transform thumbs / label / selected rail.
 These optimizations help to achieve as much native look & feel as possible using only the JS layer.
 
-
 ## Installation
 
-Install rm-range-slider with npm
+Install rm-range-slider with npm or yarn
 
 ```bash
   npm: npm install --save rm-range-slider
   yarn: yarn add rm-range-slider
+              AND
+  npm: ng add @angular/material
+  yarn: yarn add @angular/material
 ```
-
 
 ## Usage
 
 Dual Range Slider uses angular hooks, so this component doesn't work with angular below below version 2.
 
+```
 
-
+ <rm-range-slider
+    min="0"
+    max="100"
+    startValue="0"
+    endValue="10"
+    (onValueChanged)="onValueChanged($event)"
+    ></rm-range-slider>
 
 ```
-...
 
-import {RmRangeSliderComponent} from "rm-range-slider";
+1. Add `RmRangeSliderComponent` to imports array of component decorater meta
+2. Define Function onValueChanged `onValueChanged` in component like this
 
-...
-
-<rm-range-slider
-	[SliderMinRange]="0"
-	[showToolTip]="true"
-	[doubleSlider]="true"
-	[SliderMaxRange]="100"
-	[disabled]="false"
-	[setMinValue]="10"
-	[setMaxValue]="60"
-	[toolTipColor]="'#8a00e5'"
-	[rangeColor]="'#8a00e5'"
-	[sliderColor]="'#C6C6C6'"
-	[toolTipColorHover]="'#b200e5ff'"
-	[toolTipColorHoverShadow]="'rgba(108, 0, 119, 0.3)'"
-	[sliderColorRight]="'rgba(239,7,65,0.98)'"
-	(onValueChanged)="onValueChanged($event)"
-></rm-range-slider>
-... 
-
-add root lavel style file
-:root {
-	--tooltip-arrow: red;
-	--slider-thumb-color: blue;
-	--slider-thumb-color-hover: blue;
-	--slider-thumb-color-hover-shadow:  rgba(108, 0, 119, 0.3);
-}
-... 
 ```
+import {RmRangeSliderModule} from "rm-range-slider";
+
+@Component({
+  imports: [RmRangeSliderComponent],
+})
+  public onValueChanged(currentAmount: MINMAX): void {
+    console.log(currentAmount);
+  }
+
+```
+
 ### Version Mapping
 
 | Slider | Ng   |
@@ -71,25 +61,22 @@ add root lavel style file
 | 3.0.0  | 17.x |
 | 4.0.0  | 18.x |
 
-
 ### Properties
 
-| Name                      | Description                                                          | Type    |                            Default Value                             |
-|---------------------------|----------------------------------------------------------------------|---------|:--------------------------------------------------------------------:|
-| `SliderMinRange`          | Minimum value of slider                                              | number  |        Initially `min` value will be set `0` if not provided         |
-| `SliderMaxRange`          | Maximum value of slider                                              | number  |       Initially `max` value will be set `100` if not provided        |
-| `showToolTip`             | Show or hide tool tip                                                | boolean |         Initially value will be set `false` if not provided          |
-| `doubleSlider`            | Use like SIngle Slider or double slider                              | boolean |          Initially value will be set `true` if not provided          |
-| `disabled`                | Disable or enable the slider moment                                  | boolean |         Initially value will be set `false` if not provided          |
-| `setMinValue`             | Min value for slider's thumbnail to set on                           | number  |        Initially `min` value will be set `0` if not provided         |
-| `setMaxValue`             | Max value for slider's thumbnail to set on                           | boolean |       Initially `max` value will be set `100` if not provided        |
-| `toolTipColor`            | set color for tool tip                                               | string  |        Initially set default color for tool tip is `#8a00e5`         |
-| `rangeColor`              | Set color for slider line between both min and max slider's thumnail | string  | Initially set default color for tool tip is `rgba(255,255,255,0.99)` |
-| `sliderColor`             | Set color for slider line                                            | string  | Initially set default color for tool tip is `rgba(255,255,255,0.47)` |
-| `toolTipColorHover`       | set color for tool tip on hover                                      | string  |        Initially set default color for tool tip is `#8a00e5'`        |
-| `toolTipColorHoverShadow` | set shadow color for tool tip on hover                               | string  |        Initially set default color for tool tip is `#8a00e5'`        |
-| `sliderColorRight`        | Set color for right side slider line                                 | string  |   Initially set default color for tool tip is `rgb(198, 198, 198)`   |
-| `onValueChanged`          | Emit both value object of min and max                                | object  |               It do not return any value until changes               |
+| Name             | Description                                                                      | Type   |                        Default Value                         |
+|------------------|----------------------------------------------------------------------------------|--------|:------------------------------------------------------------:|
+| `min`            | Minimum value of slider                                                          | number |    Initially `min` value will be set `0` if not provided     |
+| `max`            | Maximum value of slider                                                          | number |   Initially `max` value will be set `100` if not provided    |
+| `startValue`     | deafult value for first slider                                                   | number | Initially `startValue` value will be set `0` if not provided |
+| `endValue`       | deafult value for second slider                                                  | number | Initially `endValue` value will be set `10` if not provided  |
+| `onValueChanged` | On change function `onValueChanged` will send both value min and max to compoent | MINMAX |           It do not return any value until changes           |
 
-All the other props (e.g. style) will be passed to root container component.
+## Author services
 
+Are you interested in this library but lacks features? Write to the author, he can do it for you.
+
+## Roadmap
+
+`rangeColor` - Set color for slider line between both min and max slider's thumnail.
+`sliderColor` - Set color for slider line.
+`sliderColorRight` - Set color for right side slider line
