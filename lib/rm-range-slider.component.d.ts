@@ -1,48 +1,65 @@
-import { EventEmitter, OnDestroy } from '@angular/core';
+import { AfterViewInit, ElementRef, EventEmitter, OnDestroy, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+import { MINMAX } from './rm-range-slider.component.interface';
 import * as i0 from "@angular/core";
-export interface MINMAX {
-    from: number;
-    to: number;
-}
-export declare class RmRangeSliderComponent implements OnDestroy {
-    private destroy$;
-    startValue: number;
-    endValue: number;
+export declare class RmRangeSliderComponent implements OnInit, AfterViewInit, OnDestroy {
+    #private;
+    slider: FormGroup;
     min: number;
     max: number;
+    setMinValue: number;
+    disabled: boolean;
+    showToolTip: boolean;
+    setMaxValue: number;
+    showScale: boolean;
+    doubleSlider: boolean;
+    toolTipColor: string;
+    toolTipColorHover: string;
+    toolTipColorHoverShadow: string;
+    rangeColor: string;
+    sliderColor: string;
+    sliderColorRight: string;
     onValueChanged: EventEmitter<MINMAX>;
+    toSliders: ElementRef;
+    fromSlider: ElementRef;
+    toSliderToolTip: ElementRef;
+    fromSliderToolTip: ElementRef;
+    private gradient;
+    private destroyed$;
+    private readonly fb;
+    private renderer;
     /**
-     * The `onSliderInput` function sets the `value` object with `startValue` and `endValue` properties and
-     * calls the `onSliderChange` function with this value.
+     * It creates a form.
      */
-    onSliderInput(): void;
+    ngOnInit(): void;
     /**
-     * The `formatLabel` function in TypeScript formats a number value by rounding it to the nearest
-     * hundredth and appending a 'k' if the value is greater than or equal to 1000.
-     * @param {number} value - The `value` parameter is a number that represents a numerical value which
-     * needs to be formatted. The `formatLabel` function takes this number as input and returns a formatted
-     * string representation of the number. If the value is greater than or equal to 1000, it will be
-     * rounded and displayed in
-     * @returns If the `value` is greater than or equal to 1000, the function will return the value divided
-     * by 100 and rounded, followed by the letter 'k'. Otherwise, it will return the value as a string.
+     * A lifecycle hook that is called after a component's view has been fully initialized.
      */
-    formatLabel(value: number): string;
+    ngAfterViewInit(): void;
     /**
-     * The `onSliderChange` function in TypeScript sets up a Subject to emit slider value changes with a
-     * throttle time of 5000 milliseconds.
-     * @param {MINMAX} value - The `value` parameter in the `onSliderChange` method represents the current
-     * value of the slider, which is of type `MINMAX`.
+     * It's a function that takes a string as an argument and if the showToolTip property is true, it calls the
+     * fromSliderToolTipPosition() or toSliderToolTipPosition() function depending on the value of the string argument
+     * @param {string} slideType - string - This is the type of slider that is being moved. It can be either 'from' or 'to'.
      */
-    onSliderChange(value: MINMAX): void;
+    fireEventOnInput(slideType: string): void;
     /**
-     * The ngOnDestroy function in TypeScript is used to clean up resources and unsubscribe from
-     * observables by completing a subject.
+     * We're calculating the position of the tooltip based on the value of the slider
      */
+    fromSliderToolTipPosition(): void;
+    /**
+     * The function takes the value of the toSlider and converts it to a percentage value that is used to position the
+     * toSliderToolTip
+     */
+    /**
+     * The function takes the value of the toSlider and converts it to a percentage value that is used to position the
+     * toSliderToolTip
+     */
+    toSliderToolTipPosition(): void;
+    /**
+     * We're getting the values of the two sliders, and then emitting an event with those values
+     */
+    fireEventOnChange(): void;
     ngOnDestroy(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<RmRangeSliderComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<RmRangeSliderComponent, "rm-range-slider", never, { "startValue": { "alias": "startValue"; "required": true; }; "endValue": { "alias": "endValue"; "required": true; }; "min": { "alias": "min"; "required": true; }; "max": { "alias": "max"; "required": true; }; }, { "onValueChanged": "onValueChanged"; }, never, never, true, never>;
-    static ngAcceptInputType_startValue: unknown;
-    static ngAcceptInputType_endValue: unknown;
-    static ngAcceptInputType_min: unknown;
-    static ngAcceptInputType_max: unknown;
+    static ɵcmp: i0.ɵɵComponentDeclaration<RmRangeSliderComponent, "rm-range-slider", never, { "min": { "alias": "SliderMinRange"; "required": false; }; "max": { "alias": "SliderMaxRange"; "required": false; }; "setMinValue": { "alias": "setMinValue"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; "showToolTip": { "alias": "showToolTip"; "required": false; }; "setMaxValue": { "alias": "setMaxValue"; "required": false; }; "showScale": { "alias": "showScale"; "required": false; }; "doubleSlider": { "alias": "doubleSlider"; "required": false; }; "toolTipColor": { "alias": "toolTipColor"; "required": false; }; "toolTipColorHover": { "alias": "toolTipColorHover"; "required": false; }; "toolTipColorHoverShadow": { "alias": "toolTipColorHoverShadow"; "required": false; }; "rangeColor": { "alias": "rangeColor"; "required": false; }; "sliderColor": { "alias": "sliderColor"; "required": false; }; "sliderColorRight": { "alias": "sliderColorRight"; "required": false; }; }, { "onValueChanged": "onValueChanged"; }, never, never, true, never>;
 }
