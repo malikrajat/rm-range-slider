@@ -1,13 +1,9 @@
 {
-  "name": "rm-ng-range-slider",
-  "version": "2.0.0",
-  "license": "MIT",
+  "name": "rm-range-slider",
+  "version": "5.0.0",
   "description": "A highly optimized and fully customizable pure angular component for value range selection.",
   "keywords": [
-    "range",
-    "value",
-    "value slider",
-    "range slider",
+    "",
     "library",
     "angularlibrary",
     "ng",
@@ -16,38 +12,45 @@
     "angular-native",
     "angular-component",
     "custom",
+    "range",
     "dual",
     "single",
     "slider",
+    "single-slider",
     "dual-slider",
     "thumbnail",
     "security",
-    "performance",
-    "treeshakable",
-    "tree-shakable"
+    "performance"
   ],
   "author": {
     "name": "Rajat Malik",
     "email": "mr.rajatmalik@gmail.com",
     "url": "https://www.linkedin.com/in/errajatmalik/"
   },
-  "homepage": "https://github.com/malikrajat/rm-ng-range-slider#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/malikrajat/rm-ng-range-slider.git"
+    "url": "https://github.com/malikrajat/rm-range-slider"
   },
   "bugs": {
-    "url": "https://github.com/malikrajat/rm-ng-range-slider/issues"
+    "url": "https://github.com/malikrajat/rm-range-slider/issues"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "peerDependencies": {
     "@angular/common": "^19.0.0",
-    "@angular/core": "^19.0.0"
+    "@angular/core": "^19.0.0",
+    "@angular/material": "^19.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
   },
   "sideEffects": false,
-  "module": "fesm2022/rm-ng-range-slider.mjs",
+  "type": "module",
+  "license": "MIT",
+  "module": "fesm2022/rm-range-slider.mjs",
   "typings": "index.d.ts",
   "exports": {
     "./package.json": {
@@ -55,7 +58,7 @@
     },
     ".": {
       "types": "./index.d.ts",
-      "default": "./fesm2022/rm-ng-range-slider.mjs"
+      "default": "./fesm2022/rm-range-slider.mjs"
     }
   }
 }
