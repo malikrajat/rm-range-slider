@@ -81,8 +81,8 @@ class RmRangeSliderComponent {
         this.destroy$.next();
         this.destroy$.complete();
     }
-    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "18.1.4", ngImport: i0, type: RmRangeSliderComponent, deps: [], target: i0.ɵɵFactoryTarget.Component }); }
-    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "16.1.0", version: "18.1.4", type: RmRangeSliderComponent, isStandalone: true, selector: "rm-range-slider", inputs: { startValue: ["startValue", "startValue", numberAttribute], endValue: ["endValue", "endValue", numberAttribute], min: ["min", "min", numberAttribute], max: ["max", "max", numberAttribute] }, outputs: { onValueChanged: "onValueChanged" }, ngImport: i0, template: `
+    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.0.1", ngImport: i0, type: RmRangeSliderComponent, deps: [], target: i0.ɵɵFactoryTarget.Component }); }
+    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "16.1.0", version: "19.0.1", type: RmRangeSliderComponent, isStandalone: true, selector: "rm-range-slider", inputs: { startValue: ["startValue", "startValue", numberAttribute], endValue: ["endValue", "endValue", numberAttribute], min: ["min", "min", numberAttribute], max: ["max", "max", numberAttribute] }, outputs: { onValueChanged: "onValueChanged" }, ngImport: i0, template: `
     <mat-slider
       [min]="this.min"
       [max]="this.max"
@@ -96,9 +96,9 @@ class RmRangeSliderComponent {
     </mat-slider>
   `, isInline: true, styles: ["mat-slider{width:100%}\n"], dependencies: [{ kind: "ngmodule", type: MatSliderModule }, { kind: "component", type: i1.MatSlider, selector: "mat-slider", inputs: ["disabled", "discrete", "showTickMarks", "min", "color", "disableRipple", "max", "step", "displayWith"], exportAs: ["matSlider"] }, { kind: "directive", type: i1.MatSliderRangeThumb, selector: "input[matSliderStartThumb], input[matSliderEndThumb]", exportAs: ["matSliderRangeThumb"] }, { kind: "ngmodule", type: FormsModule }, { kind: "directive", type: i2.DefaultValueAccessor, selector: "input:not([type=checkbox])[formControlName],textarea[formControlName],input:not([type=checkbox])[formControl],textarea[formControl],input:not([type=checkbox])[ngModel],textarea[ngModel],[ngDefaultControl]" }, { kind: "directive", type: i2.NgControlStatus, selector: "[formControlName],[ngModel],[formControl]" }, { kind: "directive", type: i2.NgModel, selector: "[ngModel]:not([formControlName]):not([formControl])", inputs: ["name", "disabled", "ngModel", "ngModelOptions"], outputs: ["ngModelChange"], exportAs: ["ngModel"] }] }); }
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.1.4", ngImport: i0, type: RmRangeSliderComponent, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.0.1", ngImport: i0, type: RmRangeSliderComponent, decorators: [{
             type: Component,
-            args: [{ selector: 'rm-range-slider', standalone: true, imports: [MatSliderModule, FormsModule], template: `
+            args: [{ selector: 'rm-range-slider', imports: [MatSliderModule, FormsModule], template: `
     <mat-slider
       [min]="this.min"
       [max]="this.max"
