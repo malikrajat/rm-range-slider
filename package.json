@@ -1,6 +1,6 @@
 {
   "name": "rm-range-slider",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "description": "A highly optimized and fully customizable pure angular component for value range selection.",
   "keywords": [
     "",
@@ -40,9 +40,9 @@
     "LICENSE"
   ],
   "peerDependencies": {
-    "@angular/common": "^19.0.0",
-    "@angular/core": "^19.0.0",
-    "@angular/material": "^19.0.0"
+    "@angular/common": "^20.0.0",
+    "@angular/core": "^20.0.0",
+    "@angular/material": "^20.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"

@@ -61,6 +61,7 @@ import {RmRangeSliderModule} from "rm-range-slider";
 | 3.0.0  | 17.x |
 | 4.0.0  | 18.x |
 | 5.0.0  | 19.x |
+| 6.0.0  | 20.x |
 
 ### Properties
 
