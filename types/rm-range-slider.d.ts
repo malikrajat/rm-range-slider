@@ -2,8 +2,8 @@ import * as i0 from '@angular/core';
 import { OnDestroy, EventEmitter } from '@angular/core';
 
 interface MINMAX {
-    from: number;
-    to: number;
+    min: number;
+    max: number;
 }
 declare class RmRangeSliderComponent implements OnDestroy {
     private destroy$;

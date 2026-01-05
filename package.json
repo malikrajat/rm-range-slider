@@ -1,63 +1,166 @@
 {
   "name": "rm-range-slider",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "description": "A highly optimized and fully customizable pure angular component for value range selection.",
   "keywords": [
-    "",
-    "library",
-    "angularlibrary",
-    "ng",
-    "Angular",
-    "native",
-    "angular-native",
+    "angular",
+    "angular-library",
     "angular-component",
-    "custom",
+    "angular-ui",
+    "angular-slider",
+    "angular-range-slider",
+    "angular-dual-range-slider",
+    "angular-single-range-slider",
+    "ng",
+    "ng-component",
+    "ng-library",
+    "typescript",
+    "frontend",
+    "ui",
+    "ux",
+    "ui-components",
+    "custom-ui",
+    "form-control",
+    "input",
     "range",
-    "dual",
-    "single",
+    "range-slider",
     "slider",
-    "single-slider",
+    "dual-range",
     "dual-slider",
-    "thumbnail",
-    "security",
-    "performance"
+    "single-slider",
+    "price-range-slider",
+    "min-max-slider",
+    "multi-thumb-slider",
+    "two-thumb-slider",
+    "thumb-slider",
+    "custom-slider",
+    "lightweight",
+    "performance",
+    "high-performance",
+    "secure",
+    "accessibility",
+    "a11y",
+    "responsive",
+    "mobile-friendly",
+    "desktop-friendly",
+    "touch-slider",
+    "drag-slider",
+    "mouse-slider",
+    "keyboard-support",
+    "theming",
+    "styling",
+    "css",
+    "scss",
+    "customizable",
+    "no-dependency",
+    "zero-dependency",
+    "tree-shakable",
+    "modern-angular",
+    "angular-standalone",
+    "angular-forms",
+    "reactive-forms",
+    "template-driven-forms",
+    "open-source",
+    "npm",
+    "frontend-library",
+    "ui-library",
+    "web-component-alternative",
+    "range-input",
+    "html-range",
+    "custom-range-input",
+    "angular14",
+    "angular15",
+    "angular16",
+    "angular17",
+    "angular18",
+    "angular19",
+    "angular20",
+    "angular21",
+    "angular22",
+    "angular23",
+    "angular24"
   ],
   "author": {
     "name": "Rajat Malik",
     "email": "mr.rajatmalik@gmail.com",
-    "url": "https://www.linkedin.com/in/errajatmalik/"
+    "url": "https://www.rajatmalik.dev/"
   },
+  "contributors": [
+    {
+      "name": "Rajat Malik",
+      "email": "mr.rajatmalik@gmail.com"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Rajat Malik",
+      "email": "mr.rajatmalik@gmail.com"
+    }
+  ],
+  "homepage": "https://github.com/malikrajat/rm-range-slider#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/malikrajat/rm-range-slider"
+    "url": "git+https://github.com/malikrajat/rm-range-slider"
   },
   "bugs": {
-    "url": "https://github.com/malikrajat/rm-range-slider/issues"
+    "url": "https://github.com/malikrajat/rm-range-slider/issues",
+    "email": "mr.rajatmalik@gmail.com"
   },
-  "files": [
-    "dist",
-    "README.md",
-    "LICENSE"
-  ],
   "peerDependencies": {
-    "@angular/common": "^20.0.0",
-    "@angular/core": "^20.0.0",
-    "@angular/material": "^20.0.0"
+    "@angular/common": ">=14.0.0 <24.0.0",
+    "@angular/core": ">=14.0.0 <24.0.0",
+    "@angular/material": ">=14.0.0 <24.0.0"
   },
   "dependencies": {
-    "tslib": "^2.3.0"
+    "tslib": "^2.6.0"
   },
-  "sideEffects": false,
-  "type": "module",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/malikrajat"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ],
+  "ng-add": {
+    "save": "dependencies"
+  },
+  "ng-update": {
+    "packageGroup": [
+      "rm-range-slider"
+    ]
+  },
+  "directories": {
+    "lib": "./src",
+    "doc": "./docs"
+  },
+  "packageManager": "pnpm@10.11.1",
   "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "private": false,
+  "readme": "README.md",
   "module": "fesm2022/rm-range-slider.mjs",
-  "typings": "index.d.ts",
+  "typings": "types/rm-range-slider.d.ts",
   "exports": {
     "./package.json": {
       "default": "./package.json"
     },
     ".": {
-      "types": "./index.d.ts",
+      "types": "./types/rm-range-slider.d.ts",
       "default": "./fesm2022/rm-range-slider.mjs"
     }
   }
