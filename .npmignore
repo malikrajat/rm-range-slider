@@ -1,2 +1,14 @@
-# Nested package.json's are only needed for development.
-**/package.json
+images/
+styles/
+*.png
+*.jpg
+*.svg
+assets/
+docs/
+examples/
+CHANGELOG.md
+LICENSE
+.gitignore
+rm-range-slider-*.tgz
+.idea/
+
