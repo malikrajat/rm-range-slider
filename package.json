@@ -100,7 +100,7 @@
   "homepage": "https://github.com/malikrajat/rm-range-slider#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/malikrajat/rm-range-slider"
+    "url": "git+https://github.com/malikrajat/rm-range-slider.git"
   },
   "bugs": {
     "url": "https://github.com/malikrajat/rm-range-slider/issues",
