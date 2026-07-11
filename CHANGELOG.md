@@ -5,7 +5,33 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [7.0.0] - 2024-12-26
+## [9.0.0] - 2026-07-11
+
+### Added
+- **Angular 22 Support**: Full compatibility with Angular 22
+- Enhanced signal-based state management for improved reactivity
+- New configuration options for enhanced customization
+
+### Changed
+- **BREAKING**: Updated peer dependencies to Angular 22
+- Migrated to the new Angular 22 build system and application builder
+- Updated build process to use Angular CLI 22
+
+### Fixed
+- Resolved issues with signal inputs and model inputs
+- Improved handling of edge cases with min/max boundaries
+
+### Performance
+- Further reduced bundle size through optimization
+- Improved rendering performance with Angular 22 deferrable views
+
+### Documentation
+- Updated README with Angular 22 migration guide
+- Added more comprehensive API documentation
+
+---
+
+## [8.0.0] - 2024-12-26
 
 ### Added
 - **Angular 21 Support**: Full compatibility with Angular 21
@@ -39,7 +65,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [6.0.0] - 2024-05-15
+## [7.0.0] - 2024-05-15
 
 ### Added
 - **Angular 20 Support**: Full compatibility with Angular 20
@@ -194,6 +220,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ---
 
 ## Migration Guides
+
+### Migrating to 9.0.0 from 8.x
+```bash
+# Update Angular to version 22
+ng update @angular/core@22 @angular/cli@22
+
+# Update rm-range-slider
+npm install rm-range-slider@9.0.0
+```
+
+**Breaking Changes:**
+- Angular 22 is now required
+- Ensure your project uses the Angular 22 application builder
 
 ### Migrating to 7.0.0 from 6.x
 ```bash

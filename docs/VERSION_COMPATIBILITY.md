@@ -6,14 +6,15 @@ To ensure stability and access to the latest features, we maintain a specific ma
 
 | Angular Version | Supported | Recommended Library Version |
 | :--- | :---: | :--- |
-| **Angular 21.x** | ✅ | `7.0.0+` |
-| **Angular 20.x** | ✅ | `6.0.0` |
-| **Angular 19.x** | ✅ | `5.0.0` |
-| **Angular 18.x** | ✅ | `4.0.0` |
-| **Angular 17.x** | ✅ | `3.0.0` |
-| **Angular 16.x** | ✅ | `2.0.0` |
-| **Angular 15.x** | ✅ | `1.0.0` |
-| **Angular 14.x** | ✅ | `0.0.1` |
+| **Angular 22.x** | ✅ | `9.0.0` |
+| **Angular 21.x** | ✅ | `8.0.0` |
+| **Angular 20.x** | ✅ | `7.0.0` |
+| **Angular 19.x** | ✅ | `6.0.0` |
+| **Angular 18.x** | ✅ | `5.0.0` |
+| **Angular 17.x** | ✅ | `4.0.0` |
+| **Angular 16.x** | ✅ | `3.0.0` |
+| **Angular 15.x** | ✅ | `2.0.0` |
+| **Angular 14.x** | ✅ | `1.0.1` |
 
 ## Node.js Requirements
 
